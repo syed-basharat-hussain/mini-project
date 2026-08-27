@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 1;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 header .logo {
@@ -186,30 +186,42 @@ ul {
     border-right: solid 5px black;
 }
 
-    /* TRENDING COURSE */
-.main-tranding{
+/* TRENDING COURSE */
+.main-tranding {
     width: 100%;
 }
-.tranding-title hr, .tranding-title h2{
-    display: inline-flex;
-}
-.tranding-title hr{
-    width: 33%;
-}
-.tranding-title h2{
-    margin: 0px 24px 0px 24px;
 
+.tranding-title hr,
+.tranding-title h2 {
+    display: inline-block;
 }
-.tranding-text{
+
+.tranding-title {
     text-align: center;
 }
-.tranding-para{
+
+.tranding-title hr {
+    width: 25%;
+}
+
+.tranding-title h2 {
+    margin: 0px 24px 0px 24px;
+    font-size: 36px;
+}
+
+.tranding-text {
+    text-align: center;
+}
+
+.tranding-para {
+    font-size: 17px;
     margin-top: 12px;
     color: orangered;
 }
+
 /* 
 card section */
-.main-card{
+.main-card {
     width: 90%;
     display: flex;
     justify-content: space-around;
@@ -217,73 +229,301 @@ card section */
     margin-left: 5%;
     /* right: 30px; */
 }
-.sub-card{
+
+.sub-card {
     width: 23%;
     height: 405px;
-    box-shadow: 0px 0px 7px black;
-    border-radius: 12px;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 8px;
     text-align: justify;
 }
-.sub-card img{
+
+.sub-card:hover {
+    box-shadow: 0px 0px 7px black;
+}
+
+.sub-card img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
-.sub-card p{
+
+.sub-card p {
     margin-top: 10px;
 }
-.sub-heading{
-    width: 100%;
+
+.sub-heading {
+    /* width: 100%; */
     /* height: 405px; */
     padding: 16px;
 }
-.sub-heading .view{
+
+.sub-heading a {
     text-align: center;
-    width: 90%;
-    height: 20px;
-    /* margin-top: 10px; */
-    padding: 10px 0px 7px 0px;
+    margin-top: 40px;
+    padding: 14px 79px;
     background-color: darkblue;
     text-decoration: none;
     color: white;
-    /* padding-top: 10px; */
     border-radius: 12px;
-    margin-top: 10px;
     transition: 0.4s;
     cursor: pointer;
 }
-.sub-heading .view:hover{
+
+.sub-heading .view {
+    margin-top: 20px;
+}
+
+.sub-heading a:hover {
     background-color: orangered;
 }
-.sub-heading .view a{
-   margin-top: 20px;
-   text-align: center;
-   text-decoration: none;
-   color: white;
+
+.sub-heading .view a {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#acad-card {
+    height: 380px;
 }
 
 /* ADMISSION */
-.main-addmi{
+.main-addmi {
     text-align: center;
+    margin-top: 50px;
 }
-.main-addmi h2{
+
+.main-addmi h2 {
     font-size: 60px;
     color: darkblue;
     margin-bottom: 16px;
 }
-.main-addmi h3{
+
+.main-addmi h3 {
     font-size: 20px;
     margin-bottom: 24px;
     color: darkblue;
 }
-.main-addmi p{
+
+.main-addmi p {
     width: 560px;
     height: 148px;
     margin: auto;
     text-align: justify;
     line-height: 25px;
+    font-size: 17px;
 }
-.main-addmi a{
-    width: 190.81px;
-    height: 48px;
-    background-color: darkblue;
+
+.main-addmi a {
+    padding: 15px 45px;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+}
+
+.main-addmi a:hover {
+    background-color: rgb(205, 134, 2);
+}
+
+.main-addmi .aply {
+    margin: 50px;
+}
+
+/* MESSAGE OF THE PRINCIPAL */
+.main-mess {
+    margin-top: 50px;
+    width: 100%;
+    height: 80vh;
+}
+
+.sub-mess {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.sub-mess img,
+.main-princ {
+
+    width: 318px;
+    height: 318px;
+    margin-left: 40px;
+}
+
+.imp-para {
+    margin-bottom: 20px;
+}
+
+.mess-ang a {
+    text-decoration: underline orange 2px;
+    color: darkblue;
+    font-size: 18px;
+}
+
+.mess-ang a:hover {
+    color: orange;
+}
+
+.mess-ang {
+    margin-top: 220px;
+}
+
+.princ {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.princ2 {
+    color: orange;
+    font-size: 17px;
+}
+
+/* Faculty to Student Ratio */
+.main-ratio {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sub-ratio {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.sub-ratio .num {
+    font-size: 60px;
+    color: darkblue;
+}
+
+.sub-ratio .stud {
+    font-size: 16px;
+    color: gray;
+}
+
+/* LIFE AT NPIT / GALLERY */
+.life {
+    width: 100%;
+    height: 80vh;
+}
+
+.life-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.life-btn #spacial-btn {
+    margin-bottom: 30px;
+    width: 272.74px;
+    height: 42px;
+    padding: 10px 24px;
+    background-color: orange;
+    color: white;
+}
+
+.life-btn button {
+    width: 227.7px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(210, 209, 209);
+}
+
+.life-btn button:hover {
+    color: black;
+    background-color: rgb(156, 155, 155);
+}
+
+.life-card {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.life-card .life-image {
+    width: 30%;
+    height: 250px;
+    padding: 0px 16px24px;
+}
+
+.life-card img {
+    width: 100%;
+    height: 250px;
+    padding: 0px 16px24px;
+}
+
+.life-card .life-image:hover {
+    padding: 0px;
+}
+
+/* LATEST NEWS AND UPDATES */
+.main-news {
+    width: 100%;
+    height: 80vh;
+}
+
+.news-imp {
+    margin-top: 50px;
+}
+
+.news-ang a {
+    text-decoration: none;
+    color: orange;
+}
+
+.news-ang {
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.new-heading {
+    font-size: 16px;
+}
+
+.news-para {
+    font-size: 11px;
+}
+
+#news-imp {
+    height: 360px;
+}
+
+/* Events & Happenings */
+.main-event {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+
+#event-imp{
+    margin-bottom: 300px;
+}
+.horiz hr{
+    display: inline-block;
+    width: 50px;
+}
+.sub-event{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.sub-event2 hr{
+    margin-right: 5px;
+}
+.sub-event2{
+    display: flex;
+}
+#events{
+    margin-top: 50px;
 }
