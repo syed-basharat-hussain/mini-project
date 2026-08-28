@@ -501,29 +501,129 @@ card section */
 
 /* Events & Happenings */
 .main-event {
-    width: 90%;
-    height: 100vh;
+    padding: 64px 24px;
+    /* width: 90%; */
+    /* height: 200vh; */
     margin: auto;
 }
-
+#events{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
 #event-imp{
     margin-bottom: 300px;
 }
 .horiz hr{
     display: inline-block;
-    width: 50px;
+    width: 30px;
+    /* margin-bottom: 5px; */
+    border-color: orange;
+}
+.horiz span{
+    color: orange;
+    margin-top: 10px;
 }
 .sub-event{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    margin-left: 90px;
 }
 .sub-event2 hr{
     margin-right: 5px;
+    border-color: gainsboro;
 }
 .sub-event2{
     display: flex;
+    margin-right: 100px;
+    color: gainsboro;
 }
-#events{
-    margin-top: 50px;
+.campus-eve{
+    font-size: 30px;
+    color: darkblue;
+}
+.campus-eve span{
+    color: orange;
+}
+.jun{
+    text-align: center;
+    padding: 6px 12px;
+    width: 48px;
+    height: 46px;
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+}
+
+/* JOIN US */
+
+.join{
+    margin: auto;
+    width: 96%;
+    /* margin-top: 200px; */
+    padding: 100px 24px;
+    background-color: darkblue;
+    color: white;
+    /* align-content: center; */
+}
+.join a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 16px 48px;
+    background-color: orange;
+    margin-left: 500px;
+}
+.join a:hover{
+    color: darkblue;
+    background-color: white;
+}
+
+/* Join Our Newsletter */
+#main2-our{
+    /* margin-top: 50px; */
+}
+.main-our{
+    padding: 40px 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+}
+.sub-our{
+    width: 438px;
+    font-size: 18px;
+}
+.sub-our1{
+    margin-left: 300px;
+    text-align: center;
+    font-size: 18px;
+}
+.sub-our1 input{
+    padding: 16px 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid darkblue;
+}
+.sub-our1  button{
+    padding: 16px 24px;
+    font-size: 18px;
+    background-color: darkblue;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+.sub-our1  button:hover{
+    background-color: blue;
+}
+
+footer{
+    padding: 40px 80px;
+}
+.main-foot{
+    display: flex;
+    justify-content: space-between;
 }
