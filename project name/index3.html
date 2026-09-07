@@ -1,83 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    img{
-      width: 100%;
-      height: 100vh;
+    * {
+      margin: 0px;
+      padding: 0px;
+      /* box-sizing: border-box; */
+      border: 0 solid;
+    }
+
+    nav {
+      height: 15vh;
+    }
+
+    .carousel-inner img {
+      height: 72vh;
+    }
+    #car {
+      margin-top: 150px;
+    }
+
+    .text-center {
+      font-size: 60px;
+    }
+
+    #para {
+      border-top: 5px black solid;
+      border-right: 5px black solid;
+      border-left: 5px black solid;
+      font-size: 22px;
+      text-align: justify;
+    }
+    h2{
+      text-align: center;
+    }
+    hr{
+      /* height: 500px; */
+    }
+    #trend{
+      margin-top: 100px;
     }
   </style>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="index3.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top fw-medium shadow-lg" style="font-size: 13px; ">
+    <div class="container-fluid">
+      <div class="container w-25"><a class="navbar-brand" href="#"><img src="img/npitlogo.jpeg" alt="logo" id="logo"
+            class="w-75 h-100"></a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse font-poppins" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-poppins text-capitalize text" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Principal Message</a></li>
+              <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Organization
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-uppercase" href="#">Administration</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Faculty and Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Academic
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-uppercase" href="#">Matric Tech</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Inter Tech</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item text-uppercase" href="#">Fee Academic Course</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Short Course</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-uppercase" href="#">Diploma</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Short Programs</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item text-uppercase" href="#">Application Form</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Life at NPIT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-uppercase" href="#">Skill Enhancement</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Academic Exploration</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item text-uppercase" href="#">Student Life and Activity</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Resource
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-uppercase" href="#">Library</a></li>
+              <li><a class="dropdown-item text-uppercase" href="#">Computer Lab</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item text-uppercase" href="#">Transport</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu text-uppercase">
+              <li><a class="dropdown-item" href="#">Notable Students</a></li>
+              <li><a class="dropdown-item" href="#">Notable Alumni</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Blog / News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item text-uppercase">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+        <button class="bg-danger">Apply Now</button>
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-xxls w-100" id="car">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1783797957994-59331272.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/1785863873230-675727734.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/1785863898635-135321440.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/1785863917672-208100048.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container h-100">
+    <h1 class="text-center m-5">
+      Where Tomorrow's Tech Visionaries
+      Begin Their Journey
+    </h1>
+    <div class="container w-75 p-5" id="para">
+      <p class=" " id="start">Start your educational journey at NextPlanners Institute of Future Technologies, where
+        cutting-edge technology and applied sciences meet world-class guidance. Under the mentorship of expert faculty,
+        we empower students to become critical thinkers, problem solvers, and successful professionals ready to make a
+        positive impact on society. Explore our unique programs today and start building your future!</p>
+    </div>
+  </div>
+
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <div class="container d-flex " id="trend">
+      <hr class="col-4"><h2 class="col-4">TRENDING COURSE</h2><hr class="col-4">
+    </div>
+    <div class="row p-5">
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/1783797957994-59331272.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/1783797957994-59331272.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/1783797957994-59331272.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/1783797957994-59331272.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>  
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
