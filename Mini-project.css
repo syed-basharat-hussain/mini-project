@@ -648,3 +648,8 @@ footer p{
     color: white;
     font-size: 14px;
 }
+@media (max-width:768px){
+    .title ,.main-tranding ,.main-card{
+        width: 100%;
+    }
+}
